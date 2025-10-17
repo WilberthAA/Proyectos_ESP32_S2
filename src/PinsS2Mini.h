@@ -1,6 +1,8 @@
 #pragma once
-#include <Arduino.h>   // Necesario para ledc*, pinMode, etc.
-#include <SPI.h>       // Necesario para SPI.begin(...)
+#include <Arduino.h>            // pinMode, digitalWrite, etc.
+#include <SPI.h>                // SPI.begin(...)
+#include "hal/ledc_types.h"     // Compatibilidad con core 3.x
+#include "esp32-hal-ledc.h"     // LEDC (buzzer PWM)
 
 // ==========================================================
 // Pines principales ESP32-S2 Lolin Mini
